@@ -1,4 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .custom-carousel-btn {
+    @apply btn btn-circle bg-cs-ascent text-cs-primary hover:bg-cs-primary hover:text-cs-ascent text-xl;
+  }
+  .testimonial-border-radius {
+    border-radius: 25% 75% 25% 75% / 75% 75% 25% 25%;
+  }
+  .footer-title {
+    @apply text-xl font-bold text-cs-primary;
+  }
+  .footer-li {
+    @apply text-lg font-Madimi min-h-fit h-52;
+  }
+  .footer-li li {
+    @apply hover:text-cs-primary cursor-pointer;
+  }
+}

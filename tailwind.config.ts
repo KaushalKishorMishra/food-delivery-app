@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
+import defaultTheme from "tailwindcss/defaultTheme"
 
 const config: Config = {
   content: [
@@ -9,10 +10,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors:{
-        "cs-primary":"#e84242",
+      colors: {
+        "cs-primary": "#e84242",
         "cs-ascent": "#f5e6c0",
-
+      },
+      fontFamily: {
+        Madimi: ["Madimi One", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -22,8 +25,8 @@ const config: Config = {
     },
   },
   plugins: [daisyui],
-  daisyui:{
-    themes:['dark','light', 'coffee' , 'halloween']
-  }
+  daisyui: {
+    themes: ["dark", "light", "coffee", "halloween"],
+  },
 };
 export default config;
