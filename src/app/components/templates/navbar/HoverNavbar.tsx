@@ -8,11 +8,11 @@ import { FaShoppingBag } from 'react-icons/fa'
 const HoverNavbar = () => {
   return (
     <>
-      <nav className='flex justify-between items-center py-3 px-10 rounded-full mx-5 bg-white text-xl font-Madimi pt-5'>
+      <nav className='flex justify-between items-center py-3 px-10 rounded-full mx-5 bg-white text-xl font-Madimi'>
         <div className='flex justify-around w-1/4 items-center'>
           <div className='w-1/6'>
             <Link href={"#"} className=''>
-              <Image src={Logo} alt='Logo'/>
+              <Image src={Logo} alt='Logo' className=''/>
             </Link>
           </div>
           <div className='w-5/6 ps-4'>

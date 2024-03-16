@@ -9,7 +9,7 @@ import { FaShoppingBag } from 'react-icons/fa'
 const FixedNavbar = () => {
     return (
         <>
-            <nav className='flex justify-between items-center py-3 px-10 bg-white text-xl font-Madimi fixed top-0 w-full'>
+            <nav className='flex justify-between items-center py-3 px-10 bg-white text-xl font-Madimi fixed top-0 w-full z-20'>
                 <div className='flex justify-around w-1/4 items-center'>
                     <div className='w-1/6'>
                         <Link href={"#"} className=''>

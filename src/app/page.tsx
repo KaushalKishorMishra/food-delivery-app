@@ -1,20 +1,21 @@
 'use client'
 
 import HoverNavbar from "./components/templates/navbar/HoverNavbar";
-import HeroSection from "./components/templates/herosection/HeroSection";
+import HeroSection from "./components/templates/hero_section/HeroSection";
 import Card from "./components/card/Card";
 import SpecialCard from "./components/card/SpecialCard";
 import Footer from "./components/templates/footer/Footer";
 import Testimonial from "./components/testimonial/Testimonial";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import FixedNavbar from "./components/templates/navbar/FixedNavbar";
+import Carousel from "./components/carousel/Carousel";
 
 export default function Home() {
 
-  var navbar = <HoverNavbar />
+  const [navbar, setNavbar] = useState(<div className="pt-5"><HoverNavbar /></div>)
 
   const handleScroll = () => {
-    window.scrollY > 100 ? navbar = <FixedNavbar /> : navbar = <HoverNavbar />
+    window.scrollY > 100 ? setNavbar(<FixedNavbar />) : setNavbar(<div className="pt-5"><HoverNavbar /></div>)
   }
 
   useEffect(() => {
@@ -27,11 +28,11 @@ export default function Home() {
   return (
     <div className="bg-cs-primary w-screen">
       {/* Navbar */}
-      {
-        navbar === <HoverNavbar /> ? <HoverNavbar /> : <FixedNavbar />
-      }
+      {navbar}
+
       {/* hero section */}
       <HeroSection />
+      
       {/* best selling section */}
       <div className="container lg:mx-auto w-full">
         <div className="text-center text-6xl font-serif font-bold tracking-wide text-cs-ascent">
@@ -48,6 +49,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {/* delivery options */}
       <div className=" bg-cs-ascent mt-5">
         <div className="text-center text-6xl font-serif font-bold tracking-wide text-cs-primary py-10">

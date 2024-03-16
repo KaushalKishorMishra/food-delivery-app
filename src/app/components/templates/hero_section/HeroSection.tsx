@@ -4,6 +4,7 @@ import React from 'react'
 const HeroSection = () => {
     return (
         <div>
+            
             <div className='w-full font-serif font-bold relative z-0'>
                 <div className='w-full flex justify-center'>
                     <Image src={'/burger-carosule.png'} alt='image' className='object-contain w-auto pt-36' width={1000} height={800} />
