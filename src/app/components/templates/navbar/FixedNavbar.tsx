@@ -1,23 +1,19 @@
 import React from 'react'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Logo from "../../../../../public/logo.png"
 import { FaShoppingBag } from 'react-icons/fa'
 
 const FixedNavbar = () => {
     return (
         <>
             <nav className='flex justify-between items-center py-3 px-10 bg-white text-xl font-Madimi fixed top-0 w-full z-20'>
-                <div className='flex justify-around w-1/4 items-center'>
-                    <div className='w-1/6'>
-                        <Link href={"#"} className=''>
-                            <Image src={Logo} alt='Logo' />
-                        </Link>
-                    </div>
-                    <div className='w-5/6 ps-4'>
-                        <ul className='flex justify-between'>
+                <div className='flex justify-around w-1/2 items-center'>
+                    <Link href={"#"} className='w-full'>
+                        <Image src={"/GrubHub.png"} alt='Logo' width={500} height={100}/> 
+                    </Link>
+                    <div className='ps-4 w-full'>
+                        <ul className='flex w-full justify-between'>
                             <li>
                                 <Link href={"#"}>
                                     Home

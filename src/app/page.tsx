@@ -8,7 +8,6 @@ import Footer from "./components/templates/footer/Footer";
 import Testimonial from "./components/testimonial/Testimonial";
 import { useEffect, useState } from "react";
 import FixedNavbar from "./components/templates/navbar/FixedNavbar";
-import Carousel from "./components/carousel/Carousel";
 
 export default function Home() {
 
