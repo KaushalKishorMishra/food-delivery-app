@@ -1,13 +1,13 @@
 'use client'
 
-import HoverNavbar from "./components/templates/navbar/HoverNavbar";
-import HeroSection from "./components/templates/hero_section/HeroSection";
-import Card from "./components/card/Card";
-import SpecialCard from "./components/card/SpecialCard";
-import Footer from "./components/templates/footer/Footer";
-import Testimonial from "./components/testimonial/Testimonial";
+import HoverNavbar from "../components/templates/navbar/HoverNavbar";
+import HeroSection from "../components/templates/hero_section/HeroSection";
+import Card from "../components/card/Card";
+import SpecialCard from "../components/card/SpecialCard";
+import Footer from "../components/templates/footer/Footer";
+import Testimonial from "../components/testimonial/Testimonial";
 import { useEffect, useState } from "react";
-import FixedNavbar from "./components/templates/navbar/FixedNavbar";
+import FixedNavbar from "../components/templates/navbar/FixedNavbar";
 
 export default function Home() {
 
@@ -31,7 +31,7 @@ export default function Home() {
 
       {/* hero section */}
       <HeroSection />
-      
+
       {/* best selling section */}
       <div className="container lg:mx-auto w-full">
         <div className="text-center text-6xl font-serif font-bold tracking-wide text-cs-ascent">
